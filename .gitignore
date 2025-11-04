@@ -1,0 +1,42 @@
+# Arquivos de dependências
+/node_modules
+
+# Arquivos de build
+/dist
+/.vite
+
+# Arquivos de log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Arquivos de ambiente local
+.env
+.env.local
+.env.*.local
+
+# Cache do TypeScript
+*.tsbuildinfo
+
+# Arquivos de sistema operacional
+.DS_Store
+Thumbs.db
+
+# Arquivos de configuração de editores
+.idea/
+.vscode/
+!.vscode/settings.json
+!.vscode/extensions.json
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Testes
+/coverage
+/.nyc_output
+
+# Outros
+*.tgz

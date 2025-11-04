@@ -1,0 +1,323 @@
+[
+  {
+    "sessao_id": "1dd84425-8b31-4ee7-9ec6-27a814b42865",
+    "data_hora": "2025-10-14T16:10:31.697Z",
+    "exercicios": [
+      {
+        "conhecimento_id": "b2c1e8d4-3a9b-4f8e-9c6d-5e3f2a1b0c7e",
+        "campo_fornecido": "traducao",
+        "campos_preenchidos": [
+          "texto_original",
+          "divisao_silabica",
+          "transcricao_ipa"
+        ],
+        "valores_preenchidos": [
+          "Guten Morgen.",
+          "Gu-ten Mor-gen",
+          "gutən mɔrgən"
+        ],
+        "campos_resultados": [
+          true,
+          true,
+          false
+        ]
+      }
+    ]
+  },
+  {
+    "sessao_id": "e21c053e-af5b-44a5-a0a8-6949ce0688f5",
+    "data_hora": "2025-10-14T16:25:17.018Z",
+    "exercicios": [
+      {
+        "conhecimento_id": "78d08d2a-fd41-4da4-bb15-d67a02b1ddd2",
+        "campo_fornecido": "traducao",
+        "campos_preenchidos": [
+          "texto_original",
+          "divisao_silabica",
+          "transcricao_ipa"
+        ],
+        "valores_preenchidos": [
+          "Jahre",
+          "Jah-re",
+          "jaːɐ"
+        ],
+        "campos_resultados": [
+          true,
+          true,
+          false
+        ]
+      }
+    ]
+  },
+  {
+    "sessao_id": "9ce25501-9a43-4a76-8af0-1853cb6d75ba",
+    "data_hora": "2025-10-14T17:26:19.195Z",
+    "exercicios": [
+      {
+        "conhecimento_id": "a3b4c5d6-7e8f-9a0b-1c2d-3e4f5a6b7c8d",
+        "campo_fornecido": "traducao",
+        "campos_preenchidos": [
+          "texto_original",
+          "divisao_silabica",
+          "transcricao_ipa"
+        ],
+        "valores_preenchidos": [
+          "Ich bin sechsundfünfzig Jahre alt.",
+          "Ich bin se-chs-und-fünf-zig Jah-re alt",
+          "ɪç bin zeksuntˈfʏnft͡sɪç jaːʁə alt"
+        ],
+        "campos_resultados": [
+          true,
+          false,
+          false
+        ]
+      }
+    ]
+  },
+  {
+    "sessao_id": "116c47ff-203a-47df-ba0b-fa25a6471654",
+    "data_hora": "2025-10-14T17:51:25.269Z",
+    "exercicios": [
+      {
+        "conhecimento_id": "f2a3b4c5-6d7e-8f9a-0b1c-2d3e4f5a6b7c",
+        "campo_fornecido": "traducao",
+        "campos_preenchidos": [
+          "texto_original",
+          "divisao_silabica",
+          "transcricao_ipa"
+        ],
+        "valores_preenchidos": [
+          "Ich bin Jucieudes",
+          "Ich bin Ju-ci-eu-des",
+          "ɪç bin ʒusɪeudes"
+        ],
+        "campos_resultados": [
+          false,
+          false,
+          false
+        ]
+      }
+    ]
+  },
+  {
+    "sessao_id": "6a980128-d793-4d01-abce-e21cd1318213",
+    "data_hora": "2025-10-23T13:22:22.493Z",
+    "exercicios": [
+      {
+        "conhecimento_id": "78d08d2a-fd41-4da4-bb15-d67a02b1ddd2",
+        "campo_fornecido": "traducao",
+        "campos_preenchidos": [
+          "texto_original",
+          "divisao_silabica",
+          "transcricao_ipa"
+        ],
+        "valores_preenchidos": [
+          "Jahre",
+          "jah-re",
+          "jaː̯ɐ"
+        ],
+        "campos_resultados": [
+          true,
+          true,
+          false
+        ]
+      }
+    ]
+  },
+  {
+    "sessao_id": "cb3f5ff1-0b43-4fda-bb13-3a3bf45f6cc6",
+    "data_hora": "2025-10-23T13:42:43.765Z",
+    "exercicios": [
+      {
+        "conhecimento_id": "b2c1e8d4-3a9b-4f8e-9c6d-5e3f2a1b0c7e",
+        "campo_fornecido": "traducao",
+        "campos_preenchidos": [
+          "texto_original",
+          "divisao_silabica",
+          "transcricao_ipa"
+        ],
+        "valores_preenchidos": [
+          "Guten Morgen",
+          "Gu-ten Mor-gen",
+          "gʊtn̩ mɔʁgn̩"
+        ],
+        "campos_resultados": [
+          true,
+          true,
+          false
+        ]
+      },
+      {
+        "conhecimento_id": "e7f8a9b0-1c2d-3e4f-5a6b-7c8d9e0f1a2b",
+        "campo_fornecido": "transcricao_ipa",
+        "campos_preenchidos": [
+          "texto_original",
+          "divisao_silabica",
+          "traducao"
+        ],
+        "valores_preenchidos": [
+          "Tschüsss",
+          "Tschüss",
+          "Tchau"
+        ],
+        "campos_resultados": [
+          false,
+          true,
+          true
+        ]
+      },
+      {
+        "conhecimento_id": "40986742-86a6-4bc6-bae3-41e34ce5298d",
+        "campo_fornecido": "traducao",
+        "campos_preenchidos": [
+          "texto_original",
+          "divisao_silabica",
+          "transcricao_ipa"
+        ],
+        "valores_preenchidos": [
+          "Hallo",
+          "hal -lo",
+          "ˈhalo"
+        ],
+        "campos_resultados": [
+          true,
+          false,
+          false
+        ]
+      },
+      {
+        "conhecimento_id": "c5d6e7f8-9a0b-1c2d-3e4f-5a6b7c8d9e0f",
+        "campo_fornecido": "divisao_silabica",
+        "campos_preenchidos": [
+          "texto_original",
+          "transcricao_ipa",
+          "traducao"
+        ],
+        "valores_preenchidos": [
+          "Ich wiege achtuntsiebzig Kilo",
+          "ɪç viːge axtuntziːtsɪç kilo",
+          "Eu peso 78 quilos"
+        ],
+        "campos_resultados": [
+          false,
+          false,
+          false
+        ]
+      },
+      {
+        "conhecimento_id": "b4c5d6e7-8f9a-0b1c-2d3e-4f5a6b7c8d9e",
+        "campo_fornecido": "divisao_silabica",
+        "campos_preenchidos": [
+          "texto_original",
+          "transcricao_ipa",
+          "traducao"
+        ],
+        "valores_preenchidos": [
+          "Ich bin ein Meter vierundsiebzig groß",
+          "ɪç bin ain 'meːtɐ fiːɐuntziːptsɪç",
+          "Eu tenho um metro e setenta e quatro de altura"
+        ],
+        "campos_resultados": [
+          true,
+          false,
+          true
+        ]
+      }
+    ]
+  },
+  {
+    "sessao_id": "833422b5-22d4-43c7-96fb-bd92e9ea930b",
+    "data_hora": "2025-10-25T13:50:10.075Z",
+    "exercicios": [
+      {
+        "conhecimento_id": "78d08d2a-fd41-4da4-bb15-d67a02b1ddd2",
+        "campo_fornecido": "traducao",
+        "campos_preenchidos": [
+          "texto_original",
+          "divisao_silabica",
+          "transcricao_ipa"
+        ],
+        "valores_preenchidos": [
+          "Jahre",
+          "Jah-re",
+          "jahʁə"
+        ],
+        "campos_resultados": [
+          true,
+          true,
+          false
+        ]
+      },
+      {
+        "conhecimento_id": "b487ef33-6126-4071-a2a4-452ceb613c49",
+        "campo_fornecido": "divisao_silabica",
+        "campos_preenchidos": [
+          "texto_original",
+          "transcricao_ipa",
+          "traducao"
+        ],
+        "valores_preenchidos": [
+          "Nacht",
+          "naxt",
+          "noite"
+        ],
+        "campos_resultados": [
+          true,
+          true,
+          false
+        ]
+      }
+    ]
+  },
+  {
+    "sessao_id": "14a11630-8a7d-473f-83ab-a69b7a75db0e",
+    "data_hora": "2025-10-25T14:06:48.767Z",
+    "exercicios": [
+      {
+        "conhecimento_id": "7bcb7d2f-3769-4322-9703-345cc6494e89",
+        "campo_fornecido": "texto_original",
+        "campos_preenchidos": [
+          "traducao"
+        ],
+        "valores_preenchidos": [
+          "oitenta e quatro"
+        ],
+        "campos_resultados": [
+          true
+        ]
+      }
+    ]
+  },
+  {
+    "sessao_id": "d6255747-d040-4d9c-92a9-664aed276edf",
+    "data_hora": "2025-10-25T14:15:59.113Z",
+    "exercicios": [
+      {
+        "conhecimento_id": "b8ef5102-50c5-4849-abb0-b9c5e380f7ca",
+        "campo_fornecido": "traducao",
+        "campos_preenchidos": [
+          "texto_original"
+        ],
+        "valores_preenchidos": [
+          "vierundsiebzich"
+        ],
+        "campos_resultados": [
+          false
+        ]
+      },
+      {
+        "conhecimento_id": "8ba8ed8b-7d14-4fa3-839b-2b04ac913ab1",
+        "campo_fornecido": "texto_original",
+        "campos_preenchidos": [
+          "traducao"
+        ],
+        "valores_preenchidos": [
+          "cinco"
+        ],
+        "campos_resultados": [
+          true
+        ]
+      }
+    ]
+  }
+]
