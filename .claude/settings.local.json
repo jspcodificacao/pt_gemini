@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cat:*)",
+      "Bash(git -C \"F:/jucieudes/aplicacoes/prática-de-tradução/gemini\" status)",
+      "Bash(git -C \"F:/jucieudes/aplicacoes/prática-de-tradução/gemini\" diff \"src/components/VirtualKeyboard.ts\")",
+      "Bash(pnpm build:*)",
+      "Bash(git -C \"F:/jucieudes/aplicacoes/prática-de-tradução/gemini\" diff \"src/services/DataService.ts\")",
+      "Bash(git -C \"F:/jucieudes/aplicacoes/prática-de-tradução/gemini\" diff \"src/components/ExerciseScreen.ts\")",
+      "Bash(git -C \"F:/jucieudes/aplicacoes/prática-de-tradução/gemini\" status --short)",
+      "Bash(node -e:*)",
+      "Bash(git -C \"F:/jucieudes/aplicacoes/prática-de-tradução/gemini\" diff \"src/App.ts\")"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

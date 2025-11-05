@@ -14,7 +14,7 @@ const germanKeyboard: KeyboardLayout = {
 export class VirtualKeyboard {
     private activeInputElement: HTMLInputElement | null = null;
 
-    constructor(private language: 'Alemão') {
+    constructor() {
         // Ouve cliques no documento para saber qual input está ativo
         document.addEventListener('focusin', (event) => {
             if (event.target instanceof HTMLInputElement && event.target.type === 'text') {
@@ -74,9 +74,11 @@ export class VirtualKeyboard {
             const lastSegment = segments.pop();
             const combined = this.combineChars(lastSegment?.segment ?? '', key);
              if (combined) {
-                // Substitui o último caractere pelo combinado
-                input.value = currentValue.substring(0, start - 1) + combined + currentValue.substring(end);
-                input.setSelectionRange(start, start);
+                // Substitui o último grafema pelo combinado
+                const lastSegmentLength = lastSegment?.segment.length ?? 1;
+                input.value = currentValue.substring(0, start - lastSegmentLength) + combined + currentValue.substring(end);
+                const newCursorPosition = start - lastSegmentLength + combined.length;
+                input.setSelectionRange(newCursorPosition, newCursorPosition);
              } else {
                 // Se não for uma combinação válida, apenas insere
                 this.insertText(key);
@@ -102,8 +104,8 @@ export class VirtualKeyboard {
     private combineChars(char: string, diacritic: string): string | null {
         // Regras de combinação conforme a especificação
         const rules: { [key: string]: { chars: string, result: string[] } } = {
-            '̯': { chars: 'əɪɛʏɐʊɔ', result: [...'ə̯ɪ̯ɛ̯ʏ̯ɐ̯ʊ̯ɔ̯'] },
-            '̩': { chars: 'mnŋlrɹ', result: [...'m̩n̩ŋ̩l̩r̩ɹ̩'] }
+            '̯': { chars: 'əɪɛʏɐʊɔ', result: ['ə̯', 'ɪ̯', 'ɛ̯', 'ʏ̯', 'ɐ̯', 'ʊ̯', 'ɔ̯'] },
+            '̩': { chars: 'mnŋlrɹ', result: ['m̩', 'n̩', 'ŋ̩', 'l̩', 'r̩', 'ɹ̩'] }
         };
 
         const rule = rules[diacritic];

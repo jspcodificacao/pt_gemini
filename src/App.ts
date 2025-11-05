@@ -48,7 +48,8 @@ export class App {
     }
 
     private showExercise() {
-        const nextKnowledge = AppState.getNextKnowledgeItem();
+        const selectedType = this.exerciseScreen.getSelectedKnowledgeType();
+        const nextKnowledge = AppState.getNextKnowledgeItem(selectedType);
         if (nextKnowledge) {
             this.element.innerHTML = '';
             this.element.appendChild(this.exerciseScreen.render(nextKnowledge, (results) => this.showResult(results, nextKnowledge)));

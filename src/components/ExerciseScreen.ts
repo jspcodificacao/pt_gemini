@@ -1,4 +1,4 @@
-import { Knowledge, KnowledgeType } from '../types/domain';
+import { Knowledge } from '../types/domain';
 import { VirtualKeyboard } from './VirtualKeyboard';
 import { AudioService } from '../services/AudioService';
 import { AppState } from '../state';
@@ -6,9 +6,14 @@ import { HistoryService } from '../services/HistoryService';
 
 export class ExerciseScreen {
     private keyboard: VirtualKeyboard;
+    private selectedKnowledgeType: 'both' | 'Palavra' | 'Frase' = 'both';
 
     constructor(private onNewExercise: () => void, private onEndSession: () => void) {
-        this.keyboard = new VirtualKeyboard('Alemão');
+        this.keyboard = new VirtualKeyboard();
+    }
+
+    public getSelectedKnowledgeType(): 'both' | 'Palavra' | 'Frase' {
+        return this.selectedKnowledgeType;
     }
 
     public render(knowledge: Knowledge, onVerify: (results: any) => void): HTMLElement {
@@ -20,7 +25,7 @@ export class ExerciseScreen {
                 <div>
                     <label for="knowledge-type" class="mr-2 font-semibold">Tipo de Conhecimento:</label>
                     <select id="knowledge-type" class="p-2 border rounded-md shadow-sm">
-                        <option value="both" selected>Ambos</option>
+                        <option value="both">Ambos</option>
                         <option value="Palavra">Palavra</option>
                         <option value="Frase">Frase</option>
                     </select>
@@ -103,7 +108,9 @@ export class ExerciseScreen {
         });
 
         const knowledgeTypeSelector = container.querySelector('#knowledge-type') as HTMLSelectElement;
+        knowledgeTypeSelector.value = this.selectedKnowledgeType;
         knowledgeTypeSelector.addEventListener('change', () => {
+            this.selectedKnowledgeType = knowledgeTypeSelector.value as 'both' | 'Palavra' | 'Frase';
             this.onNewExercise();
         });
 
@@ -118,8 +125,8 @@ export class ExerciseScreen {
         return container;
     }
 
-    private getRandomField(): keyof Knowledge {
-        const fields: (keyof Knowledge)[] = ["texto_original", "divisao_silabica", "transcricao_ipa", "traducao"];
+    private getRandomField(): "texto_original" | "divisao_silabica" | "transcricao_ipa" | "traducao" {
+        const fields: ("texto_original" | "divisao_silabica" | "transcricao_ipa" | "traducao")[] = ["texto_original", "divisao_silabica", "transcricao_ipa", "traducao"];
         return fields[Math.floor(Math.random() * fields.length)];
     }
 

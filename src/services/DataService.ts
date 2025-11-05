@@ -1,4 +1,4 @@
-import { KnowledgeBase, PracticeHistory } from '../types/schemas';
+import { KnowledgeBase, PracticeHistory } from '../types/domain';
 
 export class DataService {
     public static async loadKnowledgeBase(): Promise<KnowledgeBase> {
